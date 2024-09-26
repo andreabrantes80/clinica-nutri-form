@@ -1,0 +1,395 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  margin: 100px;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  margin-right: 20px; /* Ajuste de espaçamento entre a logo e a lista */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #351b76;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #53a4e7;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* Alinha o texto e imagem no centro do card */
+}
+
+.card-img {
+  max-width: 100%;
+  /* Faz com que a imagem ocupe no máximo a largura do card */
+  height: auto;
+  /* Mantém a proporção da imagem */
+  border-radius: 8px;
+  /* Adiciona bordas arredondadas à imagem */
+  margin-top: 10px;
+  /* Espaço acima da imagem */
+}
+
+.card h4 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.img {
+  width: 250px;
+}
+/* .missao{
+    margin: 100px;
+} */
+.section-missao {
+  align-items: center;
+  margin: 100px;
+}
+
+.cursos {
+  text-align: center; /* Alinha o título, parágrafo e outros textos ao centro */
+  margin-bottom: 50px;
+}
+
+.cursos iframe,
+.cursos audio {
+  display: block;
+  margin: 20px auto; /* Centraliza o iframe e o áudio e adiciona espaçamento */
+}
+
+.footer {
+  background-color: #393939;
+  color: #fff;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; /* Espaça igualmente as colunas */
+  text-align: left; /* Alinha o conteúdo das colunas à esquerda */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1; /* Faz com que cada coluna ocupe o mesmo espaço */
+  padding: 0 20px; /* Adiciona espaçamento entre as colunas */
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer i {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.footer a i {
+  color: #fff; /* Cor dos ícones nas redes sociais */
+}
+
+
+
+
+
+
+/* ESTILO RESPONSIVO */
+@media (max-width: 768px) {
+  .catalog {
+    grid-template-columns: repeat(2, 1);
+  }
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* Para 3 imagens, o contêiner precisa ter 300% da largura */
+  animation: slide 15s infinite;
+}
+
+.slides img {
+  width: 100vw; /* Faz com que a imagem ocupe 100% da largura da viewport */
+  height: 80vh; /* Aumenta a altura das imagens para 80% da altura da viewport */
+  object-fit: cover; /* Garante que a imagem preencha todo o espaço, sem distorção */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  33.33% {
+    transform: translateX(-100vw); /* Mover para a segunda imagem */
+  }
+
+  66.66% {
+    transform: translateX(-200vw); /* Mover para a terceira imagem */
+  }
+
+  100% {
+    transform: translateX(0); /* Voltar para a primeira imagem */
+  }
+}
+
+/* css calculadora imc */
+
+
+#imc-calculator {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px; /* Aumenta a largura */
+    height: auto; /* Altura automática para expandir conforme necessário */
+    min-height: 400px; /* Define uma altura mínima */
+    margin: 50px auto; /* Centraliza na página */
+    margin-bottom: 100px; /* Adiciona margem inferior de 100px */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#imc-calculator input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#imc-calculator button {
+    width: 48%;
+    padding: 12px;
+    margin: 15px 1%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#imc-calculator button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    /*Espaçamento entre os itens*/
+    width: calc(100% - 22px);
+    /*Largura*/
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 25px;
+    gap: 15px;
+
+
+}
+p{
+    color: white;
+    text-size-adjust: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Estilização dos resultados  */
+#imcResult {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.imc-normal {
+    color: green;
+}
+.imc-sobrepeso {
+    color: orange;
+}
+.imc-obesidade {
+    color: red;
+}
+
+
+/* css do formulario  */
+
+/* Estilos para o formulário de contato específico */
+#contato {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contato h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para o formulário dentro do contato */
+#contato .contact-form {
+  width: 100%;
+}
+
+#contato .form-group {
+  margin-bottom: 20px;
+}
+
+#contato label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+}
+
+/* Aumentando o comprimento (altura) dos inputs */
+#contato input {
+  width: 100%; /* Largura total do container */
+  height: 60px; /* Define um comprimento maior */
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 10px 15px; /* Ajuste de padding interno */
+}
+
+/* Aumentando o comprimento (altura) do botão */
+#contato button {
+  width: 100%; /* Largura total */
+  height: 60px; /* Define um comprimento maior */
+  font-size: 18px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#contato button:hover {
+  background-color: #0056b3;
+}
+
+/* Ajuste responsivo para telas menores */
+@media (max-width: 600px) {
+  #contato {
+    padding: 20px;
+  }
+
+  #contato input, #contato button {
+    height: 50px; /* Altura reduzida para dispositivos menores */
+    font-size: 16px;
+  }
+}
+
+
